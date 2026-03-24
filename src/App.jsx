@@ -1,15 +1,16 @@
 import React from "react";
-import HeroSection from "./components/HeroSection";
-import ConsultationSection from "./ConsultationSection";
-import WhyChooseSection from "./WhyChooseSection";
-import ServicesSection from "./ServicesSection";
-import AboutSection from "./AboutSection";
-import FeaturesSection from "./FeaturesSection";
-import HowItWorksSection from "./HowItWorksSection";
-import TestimonialsSection from "./TestimonialsSection";
-import BlogSection from "./BlogSection";
-import FAQSection from "./FAQSection";
-import ContactFooterSection from "./ContactFooterSection";
+import HeroSection from "./components/HeroSection/HeroSection";
+import ConsultationSection from "./components/ConsultationSection/ConsultationSection";
+import WhyChooseSection from "./components/WhyChooseSection/WhyChooseSection";
+import ServicesSection from "./components/ServicesSection/ServicesSection";
+import AboutSection from "./components/AboutSection/AboutSection";
+import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
+import HowItWorksSection from "./components/HowItWorksSection/HowItWorksSection";
+import TestimonialsSection from "./components/TestimonialsSection/TestimonialsSection";
+import BlogSection from "./components/BlogSection/BlogSection";
+import FAQSection from "./components/FAQSection/FAQSection";
+import ContactFooterSection from "./components/ContactFooterSection/ContactFooterSection";
+
 export default function App() {
   return (
     <>
