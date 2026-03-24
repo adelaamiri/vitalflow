@@ -5,6 +5,7 @@ import mainDoctorImg from "../../assets/sec3.jpg";
 // آواترهای کارت
 import doctor1 from "../../assets/pro1sec3.png";
 import doctor2 from "../../assets/pro2sec3.png";
+import DynamicButton from "../DynamicButton/DynamicButton";
 export default function WhyChooseSection() {
   return (
     <section className="w-full bg-[#f5f5f5] py-10 sm:py-12 lg:py-14">
@@ -60,9 +61,14 @@ export default function WhyChooseSection() {
             </div>
 
             {/* Button */}
-            <button className="mt-8 rounded-full bg-[#4f86f7] px-7 py-3 text-[15px] font-medium text-white transition hover:bg-[#3f78ee]">
-              Get Started
-            </button>
+            <DynamicButton
+              text="Get Started"
+              bgColor="#4f8dfd"
+              textColor="white"  // Set text color to white
+              hoverColor="#3f7df1"
+              size="sm"
+              marginTop="20px"
+            />
           </div>
 
           {/* RIGHT */}
