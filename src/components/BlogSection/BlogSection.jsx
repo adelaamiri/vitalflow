@@ -1,8 +1,12 @@
 
 // images
-import blog1 from "../../assets/blog1.jpg";
-import blog2 from "../../assets/blog2.jpg";
-import blog3 from "../../assets/blog3.jpg";
+// import blog1 from "../../assets/blog1.jpg";
+// import blog2 from "../../assets/blog2.jpg";
+// import blog3 from "../../assets/blog3.jpg";
+
+import { blog1, blog2, blog3 } from "../../assets/images"; 
+
+
 
 export default function BlogSection() {
   const blogPosts = [

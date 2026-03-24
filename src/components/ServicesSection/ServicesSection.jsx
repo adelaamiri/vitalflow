@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-// آیکن ها
+
 import icon1 from "../../assets/service1.svg";
 import icon2 from "../../assets/service2.svg";
 import icon3 from "../../assets/service3.svg";
@@ -107,8 +107,8 @@ export default function ServicesSection() {
             <div
               key={service.id}
               className={`rounded-[28px] bg-[#edf2f7] px-6 py-8 transition-all duration-700 ease-out sm:px-7 sm:py-9 lg:px-8 lg:py-10 ${isVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-12 opacity-0"
+                ? "translate-y-0 opacity-100"
+                : "translate-y-12 opacity-0"
                 }`}
               style={{
                 transitionDelay: `${index * 120}ms`,

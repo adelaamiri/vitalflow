@@ -1,4 +1,3 @@
-import React from "react";
 
 // avatars
 import avatar1 from "../../assets/testimonial1.webp";
