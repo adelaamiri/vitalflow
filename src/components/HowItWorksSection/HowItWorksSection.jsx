@@ -1,9 +1,9 @@
 import React from "react";
 
 // images
-import stepImg1 from "../src/assets/step1.webp";
-import stepImg2 from "../src/assets/step2.jpg";
-import stepImg3 from "../src/assets/step3.webp";
+import stepImg1 from "../../assets/step1.webp";
+import stepImg2 from "../../assets/step2.jpg";
+import stepImg3 from "../../assets/step3.webp";
 
 export default function HowItWorksSection() {
   const steps = [
@@ -56,9 +56,8 @@ export default function HowItWorksSection() {
           {steps.map((step, index) => (
             <div
               key={step.id}
-              className={`flex h-full flex-col ${
-                index === 1 ? "lg:pt-0" : "lg:pt-0"
-              }`}
+              className={`flex h-full flex-col ${index === 1 ? "lg:pt-0" : "lg:pt-0"
+                }`}
             >
               {/* number */}
               <div className="mb-5 flex h-[42px] w-[42px] items-center justify-center rounded-full bg-[#4f86f7] text-[18px] font-medium text-white">
@@ -79,20 +78,18 @@ export default function HowItWorksSection() {
 
               {/* image */}
               <div
-                className={`overflow-hidden rounded-[24px] sm:rounded-[26px] ${
-                  step.id === "01" ? "mt-6" : step.id === "02" ? "mt-6" : "mt-6"
-                }`}
+                className={`overflow-hidden rounded-[24px] sm:rounded-[26px] ${step.id === "01" ? "mt-6" : step.id === "02" ? "mt-6" : "mt-6"
+                  }`}
               >
                 <img
                   src={step.image}
                   alt={step.title}
-                  className={`w-full object-cover object-center transition-transform duration-700 hover:scale-105 ${
-                    step.id === "01"
+                  className={`w-full object-cover object-center transition-transform duration-700 hover:scale-105 ${step.id === "01"
                       ? "h-[250px] sm:h-[280px] lg:h-[300px]"
                       : step.id === "02"
                         ? "h-[250px] sm:h-[280px] lg:h-[270px]"
                         : "h-[250px] sm:h-[280px] lg:h-[270px]"
-                  }`}
+                    }`}
                 />
               </div>
 

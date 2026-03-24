@@ -1,9 +1,8 @@
-import React from "react";
 
 // images
-import blog1 from "../src/assets/blog1.jpg";
-import blog2 from "../src/assets/blog2.jpg";
-import blog3 from "../src/assets/blog3.jpg";
+import blog1 from "../../assets/blog1.jpg";
+import blog2 from "../../assets/blog2.jpg";
+import blog3 from "../../assets/blog3.jpg";
 
 export default function BlogSection() {
   const blogPosts = [

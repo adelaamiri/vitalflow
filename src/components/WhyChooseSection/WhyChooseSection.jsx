@@ -1,10 +1,10 @@
 import React from "react";
 // / عکس اصلی
-import mainDoctorImg from "../src/assets/sec3.jpg";
+import mainDoctorImg from "../../assets/sec3.jpg";
 
 // آواترهای کارت
-import doctor1 from "../src/assets/pro1sec3.png";
-import doctor2 from "../src/assets/pro2sec3.png";
+import doctor1 from "../../assets/pro1sec3.png";
+import doctor2 from "../../assets/pro2sec3.png";
 export default function WhyChooseSection() {
   return (
     <section className="w-full bg-[#f5f5f5] py-10 sm:py-12 lg:py-14">

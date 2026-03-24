@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "../src/assets/sec5.jpg";
+import aboutImg from "../../assets/sec5.jpg";
 
 export default function AboutSection() {
   return (

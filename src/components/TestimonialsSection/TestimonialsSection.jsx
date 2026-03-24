@@ -1,12 +1,12 @@
 import React from "react";
 
 // avatars
-import avatar1 from "../src/assets/testimonial1.webp";
-import avatar2 from "../src/assets/testimonial2.png";
-import avatar3 from "../src/assets/testimonial3.webp";
-import avatar4 from "../src/assets/testimonial4.webp";
-import avatar5 from "../src/assets/testimonial5.webp";
-import avatar6 from "../src/assets/testimonial6.webp";
+import avatar1 from "../../assets/testimonial1.webp";
+import avatar2 from "../../assets/testimonial2.png";
+import avatar3 from "../../assets/testimonial3.webp";
+import avatar4 from "../../assets/testimonial4.webp";
+import avatar5 from "../../assets/testimonial5.webp";
+import avatar6 from "../../assets/testimonial6.webp";
 
 export default function TestimonialsSection() {
   const testimonials = [

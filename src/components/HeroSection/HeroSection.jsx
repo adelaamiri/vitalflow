@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 // عکس اصلی داکتر
-import doctorImg from "../assets/doctor.jpg";
+import doctorImg from "../../assets/doctor.jpg";
 
 // آواترهای کوچک
-import avatar1 from "../assets/hero1.webp";
-import avatar2 from "../assets/hero2.webp";
-import avatar3 from "../assets/hero3.svg";
+import avatar1 from "../../assets/hero1.webp";
+import avatar2 from "../../assets/hero2.webp";
+import avatar3 from "../../assets/hero3.svg";
 
 export default function HeroSection() {
   const [isPrimaryHovered, setIsPrimaryHovered] = useState(false);
@@ -105,11 +105,10 @@ export default function HeroSection() {
 
             {/* Mobile Menu */}
             <div
-              className={`absolute right-0 top-full z-50 mt-2 w-[200px] overflow-hidden rounded-[20px] border border-[#e5e5e5] bg-white shadow-md transition-all duration-300 lg:hidden ${
-                isMenuOpen
+              className={`absolute right-0 top-full z-50 mt-2 w-[200px] overflow-hidden rounded-[20px] border border-[#e5e5e5] bg-white shadow-md transition-all duration-300 lg:hidden ${isMenuOpen
                   ? "visible translate-y-0 opacity-100"
                   : "invisible -translate-y-2 opacity-0"
-              }`}
+                }`}
             >
               <div className="flex flex-col p-4">
                 <a
@@ -191,21 +190,19 @@ export default function HeroSection() {
               >
                 <span className="relative block min-w-[130px] text-center">
                   <span
-                    className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap transition-all duration-300 ${
-                      isPrimaryHovered
+                    className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap transition-all duration-300 ${isPrimaryHovered
                         ? "translate-y-0 opacity-100"
                         : "translate-y-3 opacity-0"
-                    }`}
+                      }`}
                   >
                     Schedule now
                   </span>
 
                   <span
-                    className={`block whitespace-nowrap transition-all duration-300 ${
-                      isPrimaryHovered
+                    className={`block whitespace-nowrap transition-all duration-300 ${isPrimaryHovered
                         ? "-translate-y-3 opacity-0"
                         : "translate-y-0 opacity-100"
-                    }`}
+                      }`}
                   >
                     Book a call
                   </span>
@@ -232,20 +229,18 @@ export default function HeroSection() {
 
                 <span className="relative inline-block min-w-[105px]">
                   <span
-                    className={`absolute left-0 top-0 transition-all duration-300 ${
-                      isVideoHovered
+                    className={`absolute left-0 top-0 transition-all duration-300 ${isVideoHovered
                         ? "translate-y-0 opacity-100"
                         : "translate-y-2 opacity-0"
-                    }`}
+                      }`}
                   >
                     Play Intro
                   </span>
                   <span
-                    className={`inline-block transition-all duration-300 ${
-                      isVideoHovered
+                    className={`inline-block transition-all duration-300 ${isVideoHovered
                         ? "-translate-y-2 opacity-0"
                         : "translate-y-0 opacity-100"
-                    }`}
+                      }`}
                   >
                     Watch Video
                   </span>
