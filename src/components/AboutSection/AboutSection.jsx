@@ -1,6 +1,5 @@
 import React from "react";
-import aboutImg from "../../assets/sec5.jpg";
-
+import { aboutImg } from "../../assets/images";
 export default function AboutSection() {
   return (
     <section className="w-full bg-[#f5f5f5] py-12 sm:py-14 lg:py-16">

@@ -1,13 +1,7 @@
 import React from "react";
 
 // icons
-import icon1 from "../../assets/feature1.svg";
-import icon2 from "../../assets/feature2.svg";
-import icon3 from "../../assets/feature3.svg";
-import icon4 from "../../assets/feature4.svg";
-import icon5 from "../../assets/feature5.svg";
-import icon6 from "../../assets/feature6.svg";
-
+import { icon1, icon2, icon3, icon4, icon5, icon6 } from "../../assets/images";
 export default function FeaturesSection() {
   const features = [
     {
