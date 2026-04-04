@@ -3,7 +3,6 @@ import React from "react";
 export default function ConsultationSection() {
   return (
     <section className="w-full bg-[#f5f5f5] py-10 sm:py-12 lg:py-14">
-      {/* container دقیقا مثل سکشن اول */}
       <div className="mx-auto max-w-[1380px] px-5 sm:px-8 lg:px-14 xl:px-20">
         {/* box */}
         <div className="rounded-[32px] bg-[#eef3f8] px-6 py-8 sm:px-10 sm:py-10 lg:px-12 lg:py-12">

@@ -1,8 +1,8 @@
 import React from "react";
-// / عکس اصلی
-import mainDoctorImg from "../../assets/sec3.jpg";
 
-// آواترهای کارت
+import mainDoctorImg from "../../assets/sec3.jpg";
+import { Link } from "react-router-dom";
+
 import doctor1 from "../../assets/pro1sec3.png";
 import doctor2 from "../../assets/pro2sec3.png";
 import DynamicButton from "../DynamicButton/DynamicButton";
@@ -61,14 +61,16 @@ export default function WhyChooseSection() {
             </div>
 
             {/* Button */}
-            <DynamicButton
-              text="Get Started"
-              bgColor="#4f8dfd"
-              textColor="white"  // Set text color to white
-              hoverColor="#3f7df1"
-              size="sm"
-              marginTop="20px"
-            />
+            <Link to="/contact">
+              <DynamicButton
+                text="Get Started"
+                bgColor="#4f8dfd"
+                textColor="white"
+                hoverColor="#3f7df1"
+                size="sm"
+                marginTop="20px"
+              />
+            </Link>
           </div>
 
           {/* RIGHT */}

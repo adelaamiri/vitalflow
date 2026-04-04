@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 
 import { doctorImg, avatar1, avatar2, avatar3 } from "../../assets/images";
 import Navbar from "../Navbar/Navbar";
@@ -8,10 +8,11 @@ export default function HeroSection() {
   const [isPrimaryHovered, setIsPrimaryHovered] = useState(false);
   const [isVideoHovered, setIsVideoHovered] = useState(false);
 
+  const navigate = useNavigate();
+
   return (
     <section className="w-full bg-[#f5f5f5]">
       {/* Fixed Navbar */}
-
       <Navbar />
 
       {/* Hero Content */}
@@ -50,25 +51,28 @@ export default function HeroSection() {
             {/* CTA Buttons */}
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
               <button
+                onClick={() => navigate("/book-call")}
                 onMouseEnter={() => setIsPrimaryHovered(true)}
                 onMouseLeave={() => setIsPrimaryHovered(false)}
                 className="group relative inline-flex h-[54px] items-center justify-center overflow-hidden rounded-full bg-[#4f8dfd] px-7 text-[16px] font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#3f7df1]"
               >
                 <span className="relative block min-w-[130px] text-center">
                   <span
-                    className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap transition-all duration-300 ${isPrimaryHovered
-                      ? "translate-y-0 opacity-100"
-                      : "translate-y-3 opacity-0"
-                      }`}
+                    className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap transition-all duration-300 ${
+                      isPrimaryHovered
+                        ? "translate-y-0 opacity-100"
+                        : "translate-y-3 opacity-0"
+                    }`}
                   >
-                    Schedule now
+                    Book a call
                   </span>
 
                   <span
-                    className={`block whitespace-nowrap transition-all duration-300 ${isPrimaryHovered
-                      ? "-translate-y-3 opacity-0"
-                      : "translate-y-0 opacity-100"
-                      }`}
+                    className={`block whitespace-nowrap transition-all duration-300 ${
+                      isPrimaryHovered
+                        ? "-translate-y-3 opacity-0"
+                        : "translate-y-0 opacity-100"
+                    }`}
                   >
                     Book a call
                   </span>
@@ -76,6 +80,9 @@ export default function HeroSection() {
               </button>
 
               <button
+                onClick={() =>
+                  window.open("https://www.youtube.com/", "_blank")
+                }
                 onMouseEnter={() => setIsVideoHovered(true)}
                 onMouseLeave={() => setIsVideoHovered(false)}
                 className="group inline-flex items-center gap-3 text-[16px] font-medium text-black transition-colors duration-300 hover:text-[#4f8dfd]"
@@ -95,18 +102,20 @@ export default function HeroSection() {
 
                 <span className="relative inline-block min-w-[105px]">
                   <span
-                    className={`absolute left-0 top-0 transition-all duration-300 ${isVideoHovered
-                      ? "translate-y-0 opacity-100"
-                      : "translate-y-2 opacity-0"
-                      }`}
+                    className={`absolute left-0 top-0 transition-all duration-300 ${
+                      isVideoHovered
+                        ? "translate-y-0 opacity-100"
+                        : "translate-y-2 opacity-0"
+                    }`}
                   >
-                    Play Intro
+                    Watch Video
                   </span>
                   <span
-                    className={`inline-block transition-all duration-300 ${isVideoHovered
-                      ? "-translate-y-2 opacity-0"
-                      : "translate-y-0 opacity-100"
-                      }`}
+                    className={`inline-block transition-all duration-300 ${
+                      isVideoHovered
+                        ? "-translate-y-2 opacity-0"
+                        : "translate-y-0 opacity-100"
+                    }`}
                   >
                     Watch Video
                   </span>

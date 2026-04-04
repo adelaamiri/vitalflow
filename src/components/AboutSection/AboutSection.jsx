@@ -1,5 +1,6 @@
 import React from "react";
-import { aboutImg } from "../../assets/images";
+import aboutImg from "../../assets/sec5.jpg";
+import { Link } from "react-router-dom";
 export default function AboutSection() {
   return (
     <section className="w-full bg-[#f5f5f5] py-12 sm:py-14 lg:py-16">
@@ -97,9 +98,11 @@ export default function AboutSection() {
             </div>
 
             {/* Button */}
-            <button className="mt-9 rounded-full bg-[#4f86f7] px-8 py-3.5 text-[16px] font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#3f78ee] sm:mt-10 sm:px-9 sm:py-4">
-              What we do
-            </button>
+            <Link to="/services">
+              <button className="mt-6 bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition">
+                What we do
+              </button>
+            </Link>
           </div>
         </div>
       </div>
